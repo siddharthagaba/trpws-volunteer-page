@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Volunteer</title>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -30,7 +30,7 @@
 <div class="container-fluid menu">    
     <nav class="navbar navbar-expand-lg my-navbar">
   <a class="navbar-brand " href="#"><img src="img/trpws.png" height="50px" alt="" loading="lazy"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -204,6 +204,22 @@
       </div>
     </div>
 </footer>
+
+
+<!-- navbar animation -->
+ <script>
+  $(document).ready(function(){
+  $(window).scroll(function(){
+  if($(window).scrollTop() > 60 ){
+  $('.my-navbar').addClass('navbar-scroll');
+  }
+  else{
+  $('.my-navbar').removeClass('navbar-scroll');
+  }
+  });
+  });
+  
+  </script>
 
 </body>
 </html>
